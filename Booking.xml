@@ -1,0 +1,16 @@
+<Booking>
+    <id>1</id>
+    <customer_id>50</customer_id>
+    <bus_id>21</bus_id>
+    <route>
+        <src>surat</src>
+        <dest>nadiad</dest>
+    </route>
+    <price>50</price>
+    <date>20-12-2021</date>
+    <time>9:30</time>
+    <seats>
+        <seatNo>12</seatNo>
+        <seatNo>13</seatNo>
+    </seats>
+</Booking>
