@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="XMLSchema1"
+    targetNamespace="http://tempuri.org/XMLSchema1.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema1.xsd"
+    xmlns:mstns="http://tempuri.org/XMLSchema1.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+	<xs:element name="buses">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="bus">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="busId" type="xs:int"></xs:element>
+							<xs:element name="busName" type="xs:string"></xs:element>
+							<xs:element name="Route">
+								<xs:complexType>
+									<xs:all>
+										<xs:element name="src" type="xs:string"></xs:element>
+										<xs:element name="dest" type="xs:string"></xs:element>
+									</xs:all>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="price" type="xs:int"></xs:element>
+							<xs:element name="seats">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="seat">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="seatNo" type="xs:int"></xs:element>
+													<xs:element name="isAvailable" type="xs:boolean"></xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
